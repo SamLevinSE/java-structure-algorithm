@@ -10,6 +10,7 @@ package se.esmoa;
  * Interfaces are almost equivalent to protocols and magic methods in Python
  */
 
+import se.esmoa.linked_list.LinkedList;
 import se.esmoa.sorting.BubbleSort;
 import se.esmoa.sorting.InsertionSort;
 import se.esmoa.sorting.SelectionSort;
@@ -66,6 +67,19 @@ public class Main {
 //            System.out.println(cList[i]);
 //        }
 
+
+        // create a new empty LinkedList
+        LinkedList list = new LinkedList();
+
+        // insert a data into the list
+        list.insertAtHead(1);
+        list.insertAtHead(2);
+        list.insertAtHead(3);
+        list.insertAtHead(4);
+        list.insertAtHead(5);
+
+        // for printing this list, we have to override the toString() function in both Node and LinkedList classes
+        System.out.println(list);
 
 
 
