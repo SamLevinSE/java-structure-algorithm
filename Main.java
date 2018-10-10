@@ -66,25 +66,25 @@ public class Main {
 //        for (int i = 0; i < cList.length; i++) {
 //            System.out.println(cList[i]);
 //        }
-
-
-        // create a new empty LinkedList
-        LinkedList list = new LinkedList();
-        // insert a data into the list
-        list.insertAtHead(1);
-        list.insertAtHead(2);
-        list.insertAtHead(3);
-        list.insertAtHead(4);
-        list.insertAtHead(5);
-        list.insertAtHead(5);
-        // search the list for an item.
-        System.out.println(list.searchfor(3));
-        // delete the head Node
-        list.deleteTheHead();
-        // for printing this list, we have to override the toString() function in both Node and LinkedList classes
-        System.out.println(list);
-        // for printing the length of a linkedList, we need to create a function
-        System.out.println(list.LinkedListLength());
+//
+//
+//        // create a new empty LinkedList
+//        LinkedList list = new LinkedList();
+//        // insert a data into the list
+//        list.insertAtHead(1);
+//        list.insertAtHead(2);
+//        list.insertAtHead(3);
+//        list.insertAtHead(4);
+//        list.insertAtHead(5);
+//        list.insertAtHead(5);
+//        // search the list for an item.
+//        System.out.println(list.searchfor(3));
+//        // delete the head Node
+//        list.deleteTheHead();
+//        // for printing this list, we have to override the toString() function in both Node and LinkedList classes
+//        System.out.println(list);
+//        // for printing the length of a linkedList, we need to create a function
+//        System.out.println(list.LinkedListLength());
 
 
 
