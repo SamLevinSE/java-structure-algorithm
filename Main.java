@@ -10,6 +10,7 @@ package se.esmoa;
  * Interfaces are almost equivalent to protocols and magic methods in Python
  */
 
+import se.esmoa.doubly_linkedList.Doubly_linkedList;
 import se.esmoa.linked_list.LinkedList;
 import se.esmoa.sorting.BubbleSort;
 import se.esmoa.sorting.InsertionSort;
@@ -27,8 +28,8 @@ public class Main {
 //        System.out.print("How much you want to increase the speed? ");
 //        Scanner inputScan = new Scanner(System.in);
 //        int input = inputScan.nextInt(); // .next is for String type
-//
-//
+
+
 //        // Creating a new object from the Car class
 //        Car audi = new Car(
 //                22,
@@ -38,36 +39,36 @@ public class Main {
 //        audi.changePaintColor(Color.WHITE);
 //        System.out.println("The car with license plate '" + audi.licencePlate + "'");
 //        System.out.println("Speed increased to " + Car.speedingUp(50, input));
-//
-//
+
+
 //        // printing the return value of arrayMethod
 //        System.out.println(Arrays.arrayMethod());
-//
-//
+
+
 //        // bubble sorting before and after
 //        int[] bList = {3, 6, 9, 0, 5, 8, 1, 6};
 //        BubbleSort.bubbleSort(bList);
 //        for (int i = 0; i < bList.length; i++) {
 //            System.out.println(bList[i]);
 //        }
-//
-//
+
+
 //        // selection sorting
-//        int[] list = {3, 5, 8, 2, 4, 1, 0, 1};
-//        SelectionSort.selectionSorting(list);
-//        for (int i = 0; i < list.length; i++) {
-//            System.out.println(list[i]);
+//        int[] aList = {3, 5, 8, 2, 4, 1, 0, 1};
+//        SelectionSort.selectionSorting(aList);
+//        for (int i = 0; i < aList.length; i++) {
+//            System.out.println(aList[i]);
 //        }
-//
-//
+
+
 //        // insertion sorting
 //        int[] cList = {3, 5, 8, 2, 4, 1, 0, 1};
 //        InsertionSort.insertionSort(cList);
 //        for (int i = 0; i < cList.length; i++) {
 //            System.out.println(cList[i]);
 //        }
-//
-//
+
+
 //        // create a new empty LinkedList
 //        LinkedList list = new LinkedList();
 //        // insert a data into the list
@@ -87,6 +88,14 @@ public class Main {
 //        System.out.println(list.LinkedListLength());
 
 
+//        Doubly_linkedList doublyLinkedList = new Doubly_linkedList();
+//        doublyLinkedList.insertAtHead(5);
+//        doublyLinkedList.insertAtHead(9);
+//        doublyLinkedList.insertAtHead(1);
+//        doublyLinkedList.insertAtHead(5);
+//        doublyLinkedList.insertAtHead(4);
+//        doublyLinkedList.insertAtHead(3);
+//        System.out.println(doublyLinkedList.toString());
 
     }
 }
