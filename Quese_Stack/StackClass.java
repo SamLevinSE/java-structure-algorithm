@@ -38,16 +38,16 @@ public class StackClass {
     @Override
     public String toString() {
         int current = 0;
-        String result = "{";
+        StringBuilder result = new StringBuilder("{");
         while (current <= topIndex) {
-            result += stackList[current] + "";
+            result.append(stackList[current]);
             current++;
             if (current <= topIndex) {
-                result += ", ";
+                result.append(", ");
             }
         }
-        result += "}";
-        return result;
+        result.append("}");
+        return result.toString();
     }
 
 

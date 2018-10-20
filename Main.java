@@ -8,8 +8,10 @@ package se.esmoa;
  * Static means that you can be accessed just from the class and not from the instances of the class
  * Interface does force a class to have some spacial method(s). In this case we need the keyword: "implements"
  * Interfaces are almost equivalent to protocols and magic methods in Python
+ * StringBuilder is used instead of String for overriding the toString()
  */
 
+import se.esmoa.Quese_Stack.QueueClass;
 import se.esmoa.Quese_Stack.StackClass;
 import se.esmoa.doubly_linkedList.Doubly_linkedList;
 import se.esmoa.linked_list.LinkedList;
@@ -99,19 +101,37 @@ public class Main {
 //        doublyLinkedList.insertAtHead(3);
 //        System.out.println(doublyLinkedList.toString());
 
-        StackClass myStack = new StackClass();
-        myStack.push(1);
-        myStack.push(2);
-        myStack.push(3);
-        myStack.push(4);
-        myStack.push(5);
-        myStack.push(6);
-        myStack.push(7);
-        myStack.push(8);
-        myStack.push(9);
-        myStack.push(10); // this element wont be added into the list since the max length of list is 9
-        System.out.println(myStack);
-        System.out.println(myStack.peek());
+//        StackClass myStack = new StackClass();
+//        myStack.push(1);
+//        myStack.push(2);
+//        myStack.push(3);
+//        myStack.push(4);
+//        myStack.push(5);
+//        myStack.push(6);
+//        myStack.push(7);
+//        myStack.push(8);
+//        myStack.push(9);
+//        myStack.push(10); // this element wont be added into the list since the max length of list is 9
+//        System.out.println(myStack);
+//        System.out.println(myStack.peek());
+//        myStack.pop();
+//        System.out.println(myStack);
+//        System.out.println(myStack.peek());
+
+        QueueClass myQueue = new QueueClass();
+        myQueue.enQueue("Hello");
+        myQueue.enQueue("World");
+        myQueue.enQueue("This is");
+        myQueue.enQueue("Sam");
+        myQueue.enQueue("Levin");
+        System.out.println(myQueue);
+        System.out.println(myQueue.peek());
+        myQueue.deQueue();
+        System.out.println(myQueue);
+        System.out.println(myQueue.peek());
+        myQueue.enQueue("coding");
+        System.out.println(myQueue);
+        System.out.println(myQueue.peek());
 
     }
 }
