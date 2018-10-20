@@ -10,11 +10,13 @@ package se.esmoa;
  * Interfaces are almost equivalent to protocols and magic methods in Python
  */
 
+import se.esmoa.Quese_Stack.StackClass;
 import se.esmoa.doubly_linkedList.Doubly_linkedList;
 import se.esmoa.linked_list.LinkedList;
 import se.esmoa.sorting.BubbleSort;
 import se.esmoa.sorting.InsertionSort;
 import se.esmoa.sorting.SelectionSort;
+import se.esmoa.Quese_Stack.StackClass;
 
 import java.awt.*;
 import java.util.Scanner;
@@ -96,6 +98,20 @@ public class Main {
 //        doublyLinkedList.insertAtHead(4);
 //        doublyLinkedList.insertAtHead(3);
 //        System.out.println(doublyLinkedList.toString());
+
+        StackClass myStack = new StackClass();
+        myStack.push(1);
+        myStack.push(2);
+        myStack.push(3);
+        myStack.push(4);
+        myStack.push(5);
+        myStack.push(6);
+        myStack.push(7);
+        myStack.push(8);
+        myStack.push(9);
+        myStack.push(10); // this element wont be added into the list since the max length of list is 9
+        System.out.println(myStack);
+        System.out.println(myStack.peek());
 
     }
 }
