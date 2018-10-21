@@ -11,14 +11,11 @@ package se.esmoa;
  * StringBuilder is used instead of String for overriding the toString()
  */
 
-import se.esmoa.Quese_Stack.QueueClass;
-import se.esmoa.Quese_Stack.StackClass;
-import se.esmoa.doubly_linkedList.Doubly_linkedList;
-import se.esmoa.linked_list.LinkedList;
-import se.esmoa.sorting.BubbleSort;
-import se.esmoa.sorting.InsertionSort;
-import se.esmoa.sorting.SelectionSort;
-import se.esmoa.Quese_Stack.StackClass;
+import se.esmoa.Quese_Stack.*;
+import se.esmoa.Recursion.*;
+import se.esmoa.doubly_linkedList.*;
+import se.esmoa.linked_list.*;
+import se.esmoa.sorting.*;
 
 import java.awt.*;
 import java.util.Scanner;
@@ -32,8 +29,8 @@ public class Main {
 //        System.out.print("How much you want to increase the speed? ");
 //        Scanner inputScan = new Scanner(System.in);
 //        int input = inputScan.nextInt(); // .next is for String type
-
-
+//
+//
 //        // Creating a new object from the Car class
 //        Car audi = new Car(
 //                22,
@@ -43,36 +40,36 @@ public class Main {
 //        audi.changePaintColor(Color.WHITE);
 //        System.out.println("The car with license plate '" + audi.licencePlate + "'");
 //        System.out.println("Speed increased to " + Car.speedingUp(50, input));
-
-
+//
+//
 //        // printing the return value of arrayMethod
 //        System.out.println(Arrays.arrayMethod());
-
-
+//
+//
 //        // bubble sorting before and after
 //        int[] bList = {3, 6, 9, 0, 5, 8, 1, 6};
 //        BubbleSort.bubbleSort(bList);
 //        for (int i = 0; i < bList.length; i++) {
 //            System.out.println(bList[i]);
 //        }
-
-
+//
+//
 //        // selection sorting
 //        int[] aList = {3, 5, 8, 2, 4, 1, 0, 1};
 //        SelectionSort.selectionSorting(aList);
 //        for (int i = 0; i < aList.length; i++) {
 //            System.out.println(aList[i]);
 //        }
-
-
+//
+//
 //        // insertion sorting
 //        int[] cList = {3, 5, 8, 2, 4, 1, 0, 1};
 //        InsertionSort.insertionSort(cList);
 //        for (int i = 0; i < cList.length; i++) {
 //            System.out.println(cList[i]);
 //        }
-
-
+//
+//
 //        // create a new empty LinkedList
 //        LinkedList list = new LinkedList();
 //        // insert a data into the list
@@ -90,8 +87,8 @@ public class Main {
 //        System.out.println(list);
 //        // for printing the length of a linkedList, we need to create a function
 //        System.out.println(list.LinkedListLength());
-
-
+//
+//
 //        Doubly_linkedList doublyLinkedList = new Doubly_linkedList();
 //        doublyLinkedList.insertAtHead(5);
 //        doublyLinkedList.insertAtHead(9);
@@ -100,7 +97,7 @@ public class Main {
 //        doublyLinkedList.insertAtHead(4);
 //        doublyLinkedList.insertAtHead(3);
 //        System.out.println(doublyLinkedList.toString());
-
+//
 //        StackClass myStack = new StackClass();
 //        myStack.push(1);
 //        myStack.push(2);
@@ -117,21 +114,38 @@ public class Main {
 //        myStack.pop();
 //        System.out.println(myStack);
 //        System.out.println(myStack.peek());
+//
+//        QueueClass myQueue = new QueueClass();
+//        myQueue.enQueue("Hello");
+//        myQueue.enQueue("World");
+//        myQueue.enQueue("This is");
+//        myQueue.enQueue("Sam");
+//        myQueue.enQueue("Levin");
+//        System.out.println(myQueue);
+//        System.out.println(myQueue.peek());
+//        myQueue.deQueue();
+//        System.out.println(myQueue);
+//        System.out.println(myQueue.peek());
+//        myQueue.enQueue("coding");
+//        System.out.println(myQueue);
+//        System.out.println(myQueue.peek());
+//
+//        Recursion facturial = new Recursion();
+//        System.out.println(facturial.factorial(3));
+//
+//        TowerOfHanoi myTower = new TowerOfHanoi();
+//        myTower.towerOfHanoi(5, 'A', 'C', 'B');
 
-        QueueClass myQueue = new QueueClass();
-        myQueue.enQueue("Hello");
-        myQueue.enQueue("World");
-        myQueue.enQueue("This is");
-        myQueue.enQueue("Sam");
-        myQueue.enQueue("Levin");
-        System.out.println(myQueue);
-        System.out.println(myQueue.peek());
-        myQueue.deQueue();
-        System.out.println(myQueue);
-        System.out.println(myQueue.peek());
-        myQueue.enQueue("coding");
-        System.out.println(myQueue);
-        System.out.println(myQueue.peek());
+//        // merge sort
+//        MergeSort sorting = new MergeSort();
+//        int[] myMergeList = {1, 4, 3, 5, 6, 8, 3, 2, 1};
+//        sorting.mergeSort(myMergeList);
+//        System.out.println(MergeSort.display(myMergeList));
+
+        MargeSortReverse reverseMargeSort = new MargeSortReverse();
+        int[] myList = {1, 3, 2, 6, 4, 1};
+        reverseMargeSort.mergeSortReverse(myList);
+        System.out.println(MargeSortReverse.display(myList));
 
     }
 }
