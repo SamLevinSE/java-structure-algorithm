@@ -7,20 +7,23 @@ public class Node {
     private Node nextNode;
 
     // initial a constructor method for creating a Node object
-    public Node(int data){
+    public Node(int data) {
         this.data = data;
     }
 
     // initial a method for getting and setting the value of data and nextNode
-    public int getData(){
+    public int getData() {
         return this.data;
     }
-    public void setData(int data){
+
+    public void setData(int data) {
         this.data = data;
     }
-    public Node getNextNode(){
+
+    public Node getNextNode() {
         return this.nextNode;
     }
+
     public void setNextNode(Node nextNode) {
         this.nextNode = nextNode;
     }
