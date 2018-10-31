@@ -3,7 +3,8 @@ package se.esmoa.BinaryTrees;
 
 public class TreeNode {
     // memember variables
-    private int data;
+    private Integer data, smallest;
+
     private TreeNode leftChild, rightChild;
     private boolean isDeleted = false;
 
@@ -47,7 +48,7 @@ public class TreeNode {
     }
 
     /**
-     * this is a simplest delete method
+     * this is a soft delete method
      * basically it will turn off the node, it wont delete it
      */
     public void fakeDelete() {
@@ -55,8 +56,20 @@ public class TreeNode {
     }
 
     // this function is for getting the value of isDeleted variable
-    public boolean getIsDeleted() {
+    public boolean isDeleted() {
         return isDeleted;
+    }
+
+    // get the smallest number in the list
+    public Integer smallestNode() {
+        if (this.leftChild == null) return this.data;
+        return this.leftChild.smallestNode();
+    }
+
+    // get the largest number in the list
+    public Integer largestNode() {
+        if (this.rightChild == null) return this.data;
+        return this.rightChild.largestNode();
     }
 
     // a method for soft-deleting

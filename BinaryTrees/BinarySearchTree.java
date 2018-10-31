@@ -1,5 +1,6 @@
 package se.esmoa.BinaryTrees;
 
+import jdk.nashorn.api.tree.BinaryTree;
 import jdk.nashorn.api.tree.Tree;
 
 public class BinarySearchTree {
@@ -98,12 +99,24 @@ public class BinarySearchTree {
     }
 
     /**
-     * this delete function is a fake delete function
+     * this delete function is a soft delete function
      * since the previous delete is hard to implement
      */
-    public void fakeDeleting(int data) {
+    public void fakeDeleting(Integer data) {
         TreeNode toDelete = finding(data);
         toDelete.fakeDelete();
     }
 
+    /**
+     * finding the smallest and largest integers in the list
+     */
+    public Integer smallestInt() {
+        if(this.root != null) return root.smallestNode();
+        return null;
+    }
+
+    public Integer largestInt() {
+        if (this.root != null) return root.largestNode();
+        return null;
+    }
 }

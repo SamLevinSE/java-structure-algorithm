@@ -16,6 +16,7 @@ import se.esmoa.Recursion.*;
 import se.esmoa.doubly_linkedList.*;
 import se.esmoa.linked_list.*;
 import se.esmoa.sorting.*;
+import se.esmoa.BinaryTrees.*;
 
 import java.awt.*;
 import java.util.Scanner;
@@ -142,10 +143,19 @@ public class Main {
 //        sorting.mergeSort(myMergeList);
 //        System.out.println(MergeSort.display(myMergeList));
 
-        MargeSortReverse reverseMargeSort = new MargeSortReverse();
-        int[] myList = {1, 3, 2, 6, 4, 1};
-        reverseMargeSort.mergeSortReverse(myList);
-        System.out.println(MargeSortReverse.display(myList));
+//        MargeSortReverse reverseMargeSort = new MargeSortReverse();
+//        int[] myList = {1, 3, 2, 6, 4, 1};
+//        reverseMargeSort.mergeSortReverse(myList);
+//        System.out.println(MargeSortReverse.display(myList));
+
+        BinarySearchTree binaryTree = new BinarySearchTree();
+        binaryTree.insterting(10);
+        binaryTree.insterting(20);
+        binaryTree.insterting(2);
+        binaryTree.insterting(26);
+        binaryTree.insterting(8);
+
+        System.out.println(binaryTree);
 
     }
 }
