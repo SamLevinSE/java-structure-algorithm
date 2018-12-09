@@ -1,6 +1,7 @@
 package se.esmoa;
 
-/**
+
+/*
  * You can make just one Public Class in each file
  * If you change the name of file, you need to change the Public Class name too
  * the type of return value of functions must be specified and void means that this method doesn't have a return
@@ -10,17 +11,6 @@ package se.esmoa;
  * Interfaces are almost equivalent to protocols and magic methods in Python
  * StringBuilder is used instead of String for overriding the toString()
  */
-
-import se.esmoa.Quese_Stack.*;
-import se.esmoa.Recursion.*;
-import se.esmoa.doubly_linkedList.*;
-import se.esmoa.linked_list.*;
-import se.esmoa.sorting.*;
-import se.esmoa.BinaryTrees.*;
-
-import java.awt.*;
-import java.util.Scanner;
-
 
 public class Main {
 
@@ -148,14 +138,15 @@ public class Main {
 //        reverseMargeSort.mergeSortReverse(myList);
 //        System.out.println(MargeSortReverse.display(myList));
 
-        BinarySearchTree binaryTree = new BinarySearchTree();
-        binaryTree.insterting(10);
-        binaryTree.insterting(20);
-        binaryTree.insterting(2);
-        binaryTree.insterting(26);
-        binaryTree.insterting(8);
+//        BinarySearchTree binaryTree = new BinarySearchTree();
+//        binaryTree.insterting(10);
+//        binaryTree.insterting(20);
+//        binaryTree.insterting(2);
+//        binaryTree.insterting(26);
+//        binaryTree.insterting(8);
+//        System.out.println(binaryTree);
 
-        System.out.println(binaryTree);
-
+        QueensProblem queensProblem = new QueensProblem(8);
+        queensProblem.solveQueenProblem();
     }
 }

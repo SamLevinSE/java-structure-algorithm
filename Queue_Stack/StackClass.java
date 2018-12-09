@@ -1,4 +1,4 @@
-package se.esmoa.Quese_Stack;
+package se.esmoa.Queue_Stack;
 
 
 /**
